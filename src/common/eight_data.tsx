@@ -46,7 +46,7 @@ function Eight() {
                     </div>
                 </div>
 
-                <Swiper spaceBetween={30} // 슬라이드 사이 간격
+                <Swiper spaceBetween={width < 768 ? 20 : 30} // 슬라이드 사이 간격
                     slidesPerView={width < 768 ? 1.3 : 3.8}
                     navigation={{
                         nextEl: '.swiper-button-next',

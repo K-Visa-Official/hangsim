@@ -41,7 +41,7 @@ function Nine_tube() {
                 width: "40px",
                 height: "40px",
                 position: "absolute",
-                top: "50%",
+                top: "32%",
                 left: "50%",
                 transform: "translate(-50%, -50%)",
                 zIndex: 1, // 필요시 다른 요소 위에 표시

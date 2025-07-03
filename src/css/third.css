@@ -84,7 +84,7 @@
         padding: 60px 0px;
     }
    .third_data_box p {
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 10px;
    }
     .thid_content_data_list{
@@ -97,13 +97,13 @@
         width: 95%;
     }
     .third_title{
-        margin-top: 10px;
+        margin-top: 15px;
         font-size: 20px;
     }
     
     .third_subtitle{
         font-size: 15px;
-        margin: 15px 0 0 0;
+        margin: 5px 0 0 0;
     }
 
     .third_data_content_index_box{

@@ -26,7 +26,7 @@ function Footer() {
                     <div className='footer_first'>
                         <img src="/logo.png" alt="로고" className='footer_box_logo' />
                         <div style={{ display: "flex", flexDirection: "row", gap: width < 768 ?15 :30 , margin:width < 768 ? "15px 0px 0px 0px"  : "" }}>
-                            <p>회사소개</p>
+                            <p onClick={()=> window.open('https://www.barunhj.co.kr/')}>회사소개</p>
                             <p>공지사항</p>
                             <p>이용약관</p>
                             <p>개인정보처리방침</p>
