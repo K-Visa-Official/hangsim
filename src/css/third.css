@@ -1,0 +1,117 @@
+.third_data_box {
+    width: 100%;
+     padding: 120px 0;
+    /* height: 1985px; */
+    border: solid 1px #707070;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.third_data_box p {
+    font-size: 46px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.thid_content_data_list {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.third_img {
+    width: 58.5%;
+    height: auto;
+}
+
+.third_title {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    color: #fff;
+    white-space: pre-wrap;
+    margin: 0;
+}
+
+.third_subtitle {
+    opacity: 0.5;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.39;
+    text-align: left;
+    color: #fff;
+    margin: 15px 0px 0px 0px;
+    white-space: pre-wrap;
+}
+
+.third_data_content_index_box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px 0 15px 0px;
+}
+
+.third_data_content_index {
+    padding: 3px 14px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #3040a0;
+    border-radius: 15px;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .thid_content_data_list {
+    width: 95%;
+    height: auto;
+    margin-top: 30px;
+  } 
+}
+
+@media (max-width: 767px) {
+    .third_data_box{
+        padding: 60px 0px;
+    }
+   .third_data_box p {
+    font-size: 30px;
+    margin-bottom: 10px;
+   }
+    .thid_content_data_list{
+        width: 90%;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 30px;
+    }  
+    .third_img{
+        width: 95%;
+    }
+    .third_title{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    
+    .third_subtitle{
+        font-size: 15px;
+        margin: 15px 0 0 0;
+    }
+
+    .third_data_content_index_box{
+        margin-top: 20px;
+    }
+    .third_data_content_index{
+     font-size: 18px;
+   
+    }
+    
+}

@@ -1,0 +1,150 @@
+.nine_data_box {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 87px 0px 80px 0px;
+}
+
+.nine_data_box p {
+    font-size: 46px;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.content_box {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.content_box p {
+    padding: 15px 125px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nine_data_content {
+    width: 1200px;
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3열 동일 너비 */
+    gap: 25px;
+    margin-top: 80px;
+}
+
+.nine_data_content img {
+    width: 100%;
+    display: block;
+}
+
+.nine_data_content h3 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: left;
+    color: #000;
+    margin: 10px 0 0 0;
+}
+
+.nine_data_content p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: left;
+    color: #000;
+    opacity: 0.5;
+    margin: 5px 0 0 0;
+}
+
+.tube_plus {
+    margin-top: 60px;
+    text-align: center;
+    width: 297px;
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    border-radius: 33px;
+    border: solid 1px #cbcbcb;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
+
+.tube_plus_arrow {
+    width: 24px;
+    height: 24px;
+
+    transform: rotate(270deg);
+    position: absolute;
+    right: 25px;
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+    .nine_data_content {
+        width: 95%;
+        height: auto;
+    }
+
+    .nine_data_content h3 {
+        font-size: 1.3rem;
+    }
+
+    .nine_data_content p {
+        font-size: 0.9rem;
+    }
+
+    .mySwiper img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .content_box {
+    margin-top: 50px;
+}
+    .tube_plus {
+        margin-top: 35px;
+    }
+
+    .nine_data_box p {
+        font-size: 30px;
+    }
+
+    .nine_data_content {
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        gap: 15px;
+    }
+
+    .nine_data_box {
+        padding: 60px 0;
+    }
+
+    .content_box p {
+        padding: 0px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .nine_data_content h3 {
+        display: none;
+    }
+
+    .nine_data_content p {
+        display: none;
+    }
+}
