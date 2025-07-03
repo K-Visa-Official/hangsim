@@ -145,7 +145,7 @@ function App() {
 
       {/* fixed */}
       <Fix_content />
-    </div>
+    </div> 
   )
 }
 
