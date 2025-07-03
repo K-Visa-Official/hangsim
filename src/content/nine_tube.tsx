@@ -2,9 +2,11 @@
 import '../css/nine.css'
 import { useState } from 'react';
 
+
 function Nine_tube() {
 
   const [visibleCount, setVisibleCount] = useState(6);
+  
   const tube_data = [
     { img: "https://i.ytimg.com/vi/XZdTCi2uGKc/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAvwdE2l_6PT_3nIQQGyZf5F2SGWw", title: "왜 어제 마신 술로 인해 음주 단속에 걸린 거야?!", sub: "알코올 분해속도와 음주운전 적발의 함정!", url: "https://youtu.be/XZdTCi2uGKc" },
     { img: "https://i.ytimg.com/vi/WDgeXxFC8FA/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLC2iy8GhYoEi0AypjjDct8BJ2ds-g", title: "이번이 2회차 적발이라고?!  10년 넘게 전에 걸렸는데??", sub: "음주운전 적발, 10년이 넘어도 가중처벌?!", url: "https://youtu.be/WDgeXxFC8FA" },
@@ -30,27 +32,42 @@ function Nine_tube() {
     <div style={{ color: "black", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
       <div className="nine_data_content">
         {tube_data.slice(0, visibleCount).map((item, index) => (
-          <div key={index}
+          <div
+            key={index}
             onClick={() => window.open(item.url)}
-            style={{ cursor: "pointer", position: "relative" }}
+            style={{ cursor: "pointer" }}
           >
-            <img
-              src="/play.png"
-              alt={item.title}
-              style={{
-                width: "40px",
-                height: "40px",
-                position: "absolute",
-                top: "32%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                zIndex: 1, // 필요시 다른 요소 위에 표시
-              }}
-            />
-            <img src={item.img} alt={item.title} style={{ borderRadius: "20px" }} />
+            <div style={{ position: "relative", display: "inline-block" }}>
+              {/* 플레이 버튼 */}
+              <img
+                src="/play.png"
+                alt="play"
+                style={{
+                  width: "40px",
+                  height: "40px",
+                  position: "absolute",
+                  top: "50%",
+                  left: "50%",
+                  transform: "translate(-50%, -50%)",
+                  zIndex: 2,
+                  pointerEvents: "none", // 클릭 이벤트가 이미지로 막히지 않게
+                }}
+              />
+              {/* 썸네일 이미지 */}
+              <img
+                src={item.img}
+                alt={item.title}
+                style={{
+                  borderRadius: "20px",
+                  display: "block", // 공백 문제 방지
+                  width: "100%", // 필요한 경우
+                }}
+              />
+            </div>
             <h3>{item.title}</h3>
             <p>{item.sub}</p>
           </div>
+
         ))}
       </div>
       {visibleCount < tube_data.length && (

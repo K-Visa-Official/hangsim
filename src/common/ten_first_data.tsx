@@ -8,11 +8,7 @@ function Ten_first() {
         { img: "./ten_first/ten_first_3.png", title: "행정사 자격증 보유" },
         { img: "./ten_first/ten_first_4.png", title: "벤처기업인증" },
         { img: "./ten_first/ten_first_5.png", title: "행정사업무신고증" },
-
     ];
-
-
-
 
     return (
         <div className='ten_first_data_box'>
