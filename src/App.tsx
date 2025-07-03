@@ -140,7 +140,7 @@ function App() {
       <Footer />
 
       <img src="/float_btn.png" alt="로고" style={{
-        width: "70px", height: "auto", position: "fixed", right: "20px", bottom: "120px" , cursor:"pointer"
+        width: "70px", height: "auto", position: "fixed", right: "20px", bottom: "120px" , cursor:"pointer" , zIndex:99
       }} onClick={()=> window.open('http://pf.kakao.com/_AjxiRG/chat')}/>
 
       {/* fixed */}

@@ -355,9 +355,9 @@
   }
 
   .first_content_banner_text h1 {
-    width: 195px;
+    /* width: a; */
     text-align: center;
-    font-size: 36px;
+    font-size: 38px;
     margin-top: 16px;
     margin-bottom: 40px;
   }
