@@ -65,12 +65,12 @@ function App() {
             </h1>
             <div className='first_content_kakao_box' style={{ display: width < 768 ? "none" : "flex", }}>
               <div className='first_content_tel_box'
-              onClick={()=> window.open('tel:1887-8077')}>
+              onClick={()=> window.open('tel:010-2617-8953')}>
                 <img src="/first/contact_first.png" alt="로고" style={{
                   display: width < 768 ? "none" : "block",
                   width: "16px", height: "auto", position: "absolute", left: "20px"
                 }} />
-                <p>1887-8077<br />
+                <p>010-2617-8953<br />
                   <span style={{ fontSize: "12px", fontWeight: "lighter" }}>(24시간 상담)</span>
                 </p>
               </div>

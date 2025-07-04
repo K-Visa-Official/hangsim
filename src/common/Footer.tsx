@@ -56,7 +56,7 @@ function Footer() {
                             <img src="/footer/footer_youtube.png" alt="로고" className='footer_content_img' />
                         </div>
                          <h3>대표번호</h3>
-                         <h2>1877-8077</h2>
+                         <h2>010-2617-8953</h2>
                          <h5 style={{ marginTop:width < 768 ? "10px" : "20px" , textAlign:width < 768 ? "left" :"right" , fontSize:width < 768 ? "12px" : "" }}>(주)바른행정 주식회사</h5>
                     </div>
 
