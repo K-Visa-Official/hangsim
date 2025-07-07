@@ -64,7 +64,9 @@ function Eight() {
                                 <img src={slide.img} alt={slide.img}
                                     style={{ cursor: "pointer", width: "100%" }}
                                 />
-                                <h3 style={{ fontSize: width < 768 ? "20px" : "21px", fontWeight: "500", textAlign: "left", margin: width < 768 ? "20px 0px 0px 0px" : "15px 0px 0px 0px" }}>{slide.text}</h3>
+                                <h3 style={{ fontSize: width < 768 ? "18px" : "21px", fontWeight: "600", textAlign: "left", margin: width < 768 ? "20px 0px 0px 0px" : "15px 0px 0px 0px",
+                                    lineHeight:1
+                                 }}>{slide.text}</h3>
                                 <p style={{ fontSize: width < 768 ? "15px" : "18px", fontWeight: "500", textAlign: "left", opacity: 0.5, margin: width < 768 ? "15px 0px 0px 0px" : "20px 0 0 0" }}>{slide.create}</p>
                             </div>
                         </SwiperSlide>
